@@ -1,0 +1,5 @@
+name: ActiSkyBlockCore
+version: '${project.version}'
+main: com.metaxcrew.actiskyblockcore.ActiSkyBlockCore
+api-version: 1.18
+authors: [ PxLib ]
