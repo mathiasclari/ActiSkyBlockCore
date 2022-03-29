@@ -1,5 +1,6 @@
 package com.metaxcrew.actiskyblockcore;
 
+import com.metaxcrew.actiskyblockcore.addons.MobDrops;
 import com.metaxcrew.actiskyblockcore.scoreboard.ScoreBoard;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -9,7 +10,7 @@ public final class ActiSkyBlockCore extends JavaPlugin {
     public void onEnable() {
         instance = this;
         getServer().getPluginManager().registerEvents(new ScoreBoard(), this);
-
+        getServer().getPluginManager().registerEvents(new MobDrops(), this);
     }
 
     @Override
