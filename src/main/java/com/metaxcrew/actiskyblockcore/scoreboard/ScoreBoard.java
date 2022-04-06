@@ -10,12 +10,14 @@ import org.bukkit.Bukkit;
 import org.bukkit.Statistic;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.PriorityQueue;
 import java.util.UUID;
 
 public class ScoreBoard implements Listener {
@@ -31,7 +33,7 @@ public class ScoreBoard implements Listener {
         }, 0, 20);
     }
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.HIGHEST)
 
     public void onJoin(PlayerJoinEvent e) {
         Player player = e.getPlayer();
@@ -64,7 +66,7 @@ public class ScoreBoard implements Listener {
                 "",
                 ChatColor.of("#577BDF")+""+ChatColor.BOLD + "Personal Stats:",
                 ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Fly: " + ChatColor.of("#C4CDD6") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%player_allow_flight%"),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Kills: " + ChatColor.of("#C4CDD6") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
+                ChatColor.of("#738291") + "» " + ChatColor.of("#94A832") + "Kills: " + ChatColor.of("#C4CDD6") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
                 ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Deaths: " + ChatColor.of("#C4CDD6") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
                 ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Coins: " + ChatColor.of("#C4CDD6") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%vault_eco_balance_fixed%"),
                 "",
