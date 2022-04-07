@@ -70,13 +70,6 @@ public class ScoreBoard implements Listener {
                 ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Deaths: " + ChatColor.of("#C4CDD6") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
                 ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Coins: " + ChatColor.of("#C4CDD6") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%vault_eco_balance_fixed%"),
                 "",
-                ChatColor.of("#577BDF")+""+ChatColor.BOLD + "Island Stats:",
-                ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Position: " + ChatColor.of("#C4CDD6") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%fabledskyblock_island_leaderboard_level_rank%"),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Level: " + ChatColor.of("#C4CDD6") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%fabledskyblock_island_level_formatted%"),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Members: " + ChatColor.of("#C4CDD6") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%fabledskyblock_island_members%"),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Role: " + ChatColor.of("#C4CDD6") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%fabledskyblock_island_role%"),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Bank: " + ChatColor.of("#C4CDD6") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%fabledskyblock_island_bank_balance_formatted%"),
-                "",
                 ChatColor.of("#2255DF") + "" + ChatColor.BOLD + "www.acticraft.net");
     }
 }
