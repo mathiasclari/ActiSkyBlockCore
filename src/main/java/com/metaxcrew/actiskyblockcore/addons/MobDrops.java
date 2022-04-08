@@ -26,7 +26,7 @@ public void SkeletonDeath(EntityDeathEvent e) {
     if (e.getEntity().getType() == EntityType.SKELETON) {
             e.getEntity().getWorld().dropItemNaturally(e.getEntity().getLocation(), new ItemStack(org.bukkit.Material.BONE, 1));
             e.getEntity().getWorld().dropItemNaturally(e.getEntity().getLocation(), new ItemStack(Material.AMETHYST_SHARD, 1));
-        e.getEntity().getWorld().spawnParticle(Particle.HEART, e.getEntity().getLocation(), 5, 0, 0.8, 0, 0.1);
+        e.getEntity().getWorld().spawnParticle(Particle.CRIT, e.getEntity().getLocation(), 5, 0, 0.8, 0, 0.1);
         }
 
 }
