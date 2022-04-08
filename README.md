@@ -12,7 +12,7 @@
 * Silverfish > DIAMOND
 
 # Permissions > Staff 
-Base permission acs_staff_<function>
+Base permission acs_staff_"function"
 * acs_staff_gamemode > Allows you to change gamemodes from survival to creative or spectator
 * acs_staff_fly > Allows you to turn on/off flight
 * acs_staff_time > Change world time
@@ -31,7 +31,7 @@ Base permission acs_staff_<function>
 * Not set yet
 
 # UltimateRank > Permissions
-Base permission acs_ultimate_<function>
+Base permission acs_ultimate_"function"
 * acs_ultimate_nv > Night Vision
 * acs_ultimate_hat > Set any item as hat
   
