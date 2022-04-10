@@ -1,6 +1,18 @@
 # ActiSkyBlockCore
 
-# MobDrops
+## Block break respawn timers
+ * IRON_ORE | 3min
+ * GOLD_ORE | 3min
+ * DIAMOND_ORE | 3min
+ * EMERALD_ORE | 3min
+ * REDSTONE_ORE | 3min
+ * LAPIS_ORE | 3min
+ * COAL_ORE | 3min
+ * OBSIDIAN | 3min
+ * WHEAT | 30sec
+
+
+## MobDrops
 * Zombie > ROTTEN_FLESH, COPPER_INGOT
 * Skeleton > AMETHYST_SHARD, BONE
 * Creeper > GUNPOWDER, EMERALD
@@ -11,30 +23,30 @@
 * Zombified_piglin > GOLD_NUGGET, GOLDEN_INGOT
 * Silverfish > DIAMOND
 
-# Permissions > Staff 
+## Permissions > Staff 
 Base permission acs_staff_"function"
 * acs_staff_gamemode > Allows you to change gamemodes from survival to creative or spectator
 * acs_staff_fly > Allows you to turn on/off flight
 * acs_staff_time > Change world time
 * acs_staff_weather > Change world weather
 
-# Commands > Staff
+## Commands > Staff
 * /gmc /gmsp /gmc
 * /time
 * /fly
 * /weather
 
-# Permissions default
+## Permissions default
 * None > no permission required
 
-# Default commands
+## Default commands
 * Not set yet
 
-# UltimateRank > Permissions
+## UltimateRank > Permissions
 Base permission acs_ultimate_"function"
 * acs_ultimate_nv > Night Vision
 * acs_ultimate_hat > Set any item as hat
   
-# UltimateRank > Commands
+## UltimateRank > Commands
 * /hat
 * /nv

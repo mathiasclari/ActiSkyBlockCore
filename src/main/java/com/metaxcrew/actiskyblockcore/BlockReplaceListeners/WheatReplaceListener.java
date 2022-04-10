@@ -28,7 +28,7 @@ public void onResourceWorlds(BlockBreakEvent e) {
 
 
                 }
-            }, 20L);
+            }, 300L);
         }
 }
 }
