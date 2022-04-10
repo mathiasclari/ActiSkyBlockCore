@@ -1,6 +1,7 @@
 package com.metaxcrew.actiskyblockcore;
 
-import com.metaxcrew.actiskyblockcore.addons.WheatReplace;
+import com.metaxcrew.actiskyblockcore.BlockReplaceListeners.IronOreListeners;
+import com.metaxcrew.actiskyblockcore.BlockReplaceListeners.WheatReplaceListener;
 import com.metaxcrew.actiskyblockcore.addons.MobDrops;
 import com.metaxcrew.actiskyblockcore.scoreboard.ScoreBoard;
 import com.metaxcrew.actiskyblockcore.staffcommands.GameModeCreative;
@@ -22,7 +23,8 @@ public final class ActiSkyBlockCore extends JavaPlugin {
 
         getServer().getPluginManager().registerEvents(new ScoreBoard(), this);
         getServer().getPluginManager().registerEvents(new MobDrops(), this);
-        getServer().getPluginManager().registerEvents(new WheatReplace(), this);
+        getServer().getPluginManager().registerEvents(new WheatReplaceListener(), this);
+        getServer().getPluginManager().registerEvents(new IronOreListeners(), this);
 
         getCommand("gmc").setExecutor(new GameModeCreative());
         getCommand("gms").setExecutor(new GameModeSurvival());
