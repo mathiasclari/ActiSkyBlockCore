@@ -14,6 +14,8 @@ import com.metaxcrew.actiskyblockcore.ultimatecommands.NightVisionCommand;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.Arrays;
+
 public final class ActiSkyBlockCore extends JavaPlugin {
 
     private static ActiSkyBlockCore instance;
