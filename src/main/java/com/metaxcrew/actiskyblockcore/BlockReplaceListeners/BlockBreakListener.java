@@ -8,10 +8,12 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 
 import java.util.Arrays;
+import java.util.List;
 
 import static com.metaxcrew.actiskyblockcore.BlockReplaceListeners.BlockReplacementEngine.checkBlockReplace;
 
 public class BlockBreakListener implements Listener {
+	List<String> resourceWorlds = Arrays.asList("farm_world", "forest_world");
 	@EventHandler
 	public void onResourceWorlds(BlockBreakEvent e) {
 		checkBlockReplace( // IRON ORE EXAMPLE
@@ -22,7 +24,19 @@ public class BlockBreakListener implements Listener {
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.BLOCK_AMETHYST_BLOCK_BREAK, // sound to play on block break
 				5, // delay before replacing block, in seconds
-				Material.IRON_BLOCK, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
+				Material.IRON_ORE, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
+				null, // extra block data for the final replacement block
+				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
+		);
+		checkBlockReplace( // IRON ORE EXAMPLE
+				e, // block break event passed through
+				Material.IRON_PICKAXE, // tool/item required to break block with, can be list of materials or air if you want them to be able to use anything
+				e.getBlock().getType() == Material.EMERALD_ORE && resourceWorlds.contains(e.getBlock().getWorld().getName()),  // requirement for event to happen, in this case: block = iron ore
+				true, // requirements for replacing block, checked when it's time to replace
+				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
+				Sound.BLOCK_AMETHYST_BLOCK_BREAK, // sound to play on block break
+				5, // delay before replacing block, in seconds
+				Material.EMERALD_ORE, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
 		);
@@ -30,7 +44,7 @@ public class BlockBreakListener implements Listener {
 		checkBlockReplace( // WHEAT EXAMPLE
 				e, // block break event passed through
 				Material.AIR, // tool/item required to break block with, can be list of materials or air if you want them to be able to use anything
-				e.getBlock().getType() == Material.WHEAT, // requirement for event to happen, in this case: block = iron ore
+				e.getBlock().getType() == Material.WHEAT && resourceWorlds.contains(e.getBlock().getWorld().getName()), // requirement for event to happen, in this case: block = iron ore
 				true, // requirements for replacing block, checked when it's time to replace
 				null, // block to replace with temporarily, null = no temporary replacement
 				Sound.BLOCK_AMETHYST_BLOCK_BREAK, // sound to play on block break
