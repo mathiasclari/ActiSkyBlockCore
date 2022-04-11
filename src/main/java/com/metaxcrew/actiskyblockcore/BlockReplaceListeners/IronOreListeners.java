@@ -32,7 +32,7 @@ if(p.getItemInHand().getType() == Material.IRON_PICKAXE) {
             }, 3600L);
         }
     }else{
-    e.setCancelled(true);
+        //e.setCancelled(true);
     }
     }
 }
