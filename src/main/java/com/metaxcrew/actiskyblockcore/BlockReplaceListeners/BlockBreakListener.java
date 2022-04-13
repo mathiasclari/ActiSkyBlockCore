@@ -26,7 +26,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.ENTITY_EXPERIENCE_ORB_PICKUP, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.IRON_ORE, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -38,7 +38,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.ENTITY_EXPERIENCE_ORB_PICKUP, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.EMERALD_ORE, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -50,7 +50,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.ENTITY_EXPERIENCE_ORB_PICKUP, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.GOLD_ORE, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -62,7 +62,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.ENTITY_EXPERIENCE_ORB_PICKUP, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.LAPIS_ORE, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -74,7 +74,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.ENTITY_EXPERIENCE_ORB_PICKUP, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.DIAMOND_ORE, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -86,7 +86,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.ENTITY_EXPERIENCE_ORB_PICKUP, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.NETHER_QUARTZ_ORE, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -98,7 +98,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.ENTITY_EXPERIENCE_ORB_PICKUP, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.STONE, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -110,7 +110,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.ENTITY_EXPERIENCE_ORB_PICKUP, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.COBBLESTONE, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -122,7 +122,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.UI_LOOM_TAKE_RESULT, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.OAK_LOG, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -134,7 +134,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.UI_LOOM_TAKE_RESULT, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.OAK_WOOD, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -146,7 +146,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.UI_LOOM_TAKE_RESULT, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.DARK_OAK_LOG, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -158,7 +158,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.UI_LOOM_TAKE_RESULT, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.DARK_OAK_WOOD, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -170,7 +170,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.UI_LOOM_TAKE_RESULT, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.BIRCH_LOG, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -182,7 +182,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.UI_LOOM_TAKE_RESULT, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.BIRCH_WOOD, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -194,7 +194,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.UI_LOOM_TAKE_RESULT, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.JUNGLE_LOG, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -206,7 +206,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.UI_LOOM_TAKE_RESULT, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.JUNGLE_WOOD, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -218,7 +218,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.UI_LOOM_TAKE_RESULT, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.SPRUCE_LOG, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -230,7 +230,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.UI_LOOM_TAKE_RESULT, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.SPRUCE_WOOD, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -242,7 +242,7 @@ public class BlockBreakListener implements Listener {
 				true, // requirements for replacing block, checked when it's time to replace
 				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
 				Sound.BLOCK_AZALEA_FALL, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.MUSHROOM_STEM, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -252,9 +252,9 @@ public class BlockBreakListener implements Listener {
 				Material.STONE_AXE, // tool/item required to break block with, can be list of materials or air if you want them to be able to use anything
 				e.getBlock().getType() == Material.MUSHROOM_STEW && resourceWorlds.contains(e.getBlock().getWorld().getName()),  // requirement for event to happen, in this case: block = iron ore
 				true, // requirements for replacing block, checked when it's time to replace
-				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
+				Material.AIR, // block to replace with temporarily, null = no temporary replacement
 				Sound.BLOCK_AZALEA_FALL, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.MUSHROOM_STEW, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -264,9 +264,9 @@ public class BlockBreakListener implements Listener {
 				Material.STONE_AXE, // tool/item required to break block with, can be list of materials or air if you want them to be able to use anything
 				e.getBlock().getType() == Material.BROWN_MUSHROOM_BLOCK && resourceWorlds.contains(e.getBlock().getWorld().getName()),  // requirement for event to happen, in this case: block = iron ore
 				true, // requirements for replacing block, checked when it's time to replace
-				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
+				Material.AIR, // block to replace with temporarily, null = no temporary replacement
 				Sound.BLOCK_AZALEA_FALL, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.BROWN_MUSHROOM_BLOCK, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -276,9 +276,9 @@ public class BlockBreakListener implements Listener {
 				Material.STONE_AXE, // tool/item required to break block with, can be list of materials or air if you want them to be able to use anything
 				e.getBlock().getType() == Material.RED_MUSHROOM_BLOCK && resourceWorlds.contains(e.getBlock().getWorld().getName()),  // requirement for event to happen, in this case: block = iron ore
 				true, // requirements for replacing block, checked when it's time to replace
-				Material.BEDROCK, // block to replace with temporarily, null = no temporary replacement
+				Material.AIR, // block to replace with temporarily, null = no temporary replacement
 				Sound.BLOCK_AZALEA_FALL, // sound to play on block break
-				5, // delay before replacing block, in seconds
+				300, // delay before replacing block, in seconds
 				Material.RED_MUSHROOM_BLOCK, // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				null, // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
@@ -334,7 +334,7 @@ public class BlockBreakListener implements Listener {
 				Arrays.asList(Material.AIR, Material.CARROTS) // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
 		);
 
-		/*checkBlockReplace( // ALL LOGS
+checkBlockReplace( // ALL LOGS
 				e, // block break event passed through
 				Material.AIR, // tool/item required to break block with, can be list of materials or air if you want them to be able to use anything
 				true, // requirement for event to happen, in this case: block = iron ore
@@ -345,6 +345,7 @@ public class BlockBreakListener implements Listener {
 				e.getBlock().getType(), // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				e.getBlock().getBlockData(), // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
-		);*/
+		);
+
 	}
 }

@@ -1,15 +1,28 @@
 # ActiSkyBlockCore
 
 ## Block break respawn timers
- * IRON_ORE | 3min
- * GOLD_ORE | 3min
- * DIAMOND_ORE | 3min
- * EMERALD_ORE | 3min
- * REDSTONE_ORE | 3min
- * LAPIS_ORE | 3min
- * COAL_ORE | 3min
- * OBSIDIAN | 3min
- * WHEAT | 30sec
+ * IRON_ORE | 5min
+ * NETHER_QUARTZ_ORE | 5min
+ * GOLD_ORE | 5min
+ * DIAMOND_ORE | 5min
+ * EMERALD_ORE | 5min
+ * REDSTONE_ORE | 5min
+ * LAPIS_ORE | 5min
+ * COAL_ORE | 5min
+ * STONE | 5min
+ * OAK_LOG | 5min
+ * SPRUCE_LOG | 5min
+ * BIRCH_LOG | 5min
+ * JUNGLE_LOG | 5min
+ * JUNGLE_WOOD | 5min
+ * SPRUCE_WOOD | 5min
+ * BIRCH_WOOD | 5min
+ * OAK_WOOD | 5min
+ * OBSIDIAN | 10min
+ * WHEAT | 2min
+ * POTATO | 2min
+ * CARROT | 2min
+ * BEETROOT | 2min
 
 
 ## MobDrops

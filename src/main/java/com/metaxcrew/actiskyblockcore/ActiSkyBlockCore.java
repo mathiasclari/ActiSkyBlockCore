@@ -6,6 +6,7 @@ import com.metaxcrew.actiskyblockcore.ChatSystem.JoinMessage;
 import com.metaxcrew.actiskyblockcore.SkyBlockSystem.EmptyChunkGenerator;
 import com.metaxcrew.actiskyblockcore.addons.MobDrops;
 import com.metaxcrew.actiskyblockcore.scoreboard.ScoreBoard;
+import com.metaxcrew.actiskyblockcore.staffcommands.FlyCommand;
 import com.metaxcrew.actiskyblockcore.staffcommands.GameModeCreative;
 import com.metaxcrew.actiskyblockcore.staffcommands.GameModeSpectator;
 import com.metaxcrew.actiskyblockcore.staffcommands.GameModeSurvival;
@@ -54,6 +55,7 @@ public final class ActiSkyBlockCore extends JavaPlugin {
         getCommand("gmc").setExecutor(new GameModeCreative());
         getCommand("gms").setExecutor(new GameModeSurvival());
         getCommand("gmsp").setExecutor(new GameModeSpectator());
+        getCommand("fly").setExecutor(new FlyCommand());
 
         getCommand("hat").setExecutor(new HatCommand());
         getCommand("nv").setExecutor(new NightVisionCommand());

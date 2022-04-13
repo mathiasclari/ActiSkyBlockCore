@@ -8,11 +8,9 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 public class JoinMessage implements Listener {
     @EventHandler
-    public void onFirstJoin(PlayerJoinEvent event) {
+    public void Join(PlayerJoinEvent event) {
         Player p = event.getPlayer();
-        if (event.getPlayer().hasPlayedBefore()) {
-            event.setJoinMessage(ChatColor.of("#2473E9")+p.getName() + ChatColor.of("#7EABEE") +" has joined the server");
-        }
-        event.setJoinMessage(ChatColor.of("#2473E9")+p.getName() + ChatColor.of("#7EABEE") +" has joined SkyBlock for the first time!");
+        event.setJoinMessage(ChatColor.of("#2473E9")+p.getName() + ChatColor.of("#7EABEE") +" has joined SkyBlock!");
+
     }
 }
