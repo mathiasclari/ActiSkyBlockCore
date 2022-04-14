@@ -6,10 +6,7 @@ import com.metaxcrew.actiskyblockcore.ChatSystem.JoinMessage;
 import com.metaxcrew.actiskyblockcore.SkyBlockSystem.EmptyChunkGenerator;
 import com.metaxcrew.actiskyblockcore.addons.MobDrops;
 import com.metaxcrew.actiskyblockcore.scoreboard.ScoreBoard;
-import com.metaxcrew.actiskyblockcore.staffcommands.FlyCommand;
-import com.metaxcrew.actiskyblockcore.staffcommands.GameModeCreative;
-import com.metaxcrew.actiskyblockcore.staffcommands.GameModeSpectator;
-import com.metaxcrew.actiskyblockcore.staffcommands.GameModeSurvival;
+import com.metaxcrew.actiskyblockcore.staffcommands.*;
 import com.metaxcrew.actiskyblockcore.ultimatecommands.HatCommand;
 import com.metaxcrew.actiskyblockcore.ultimatecommands.NightVisionCommand;
 
@@ -52,11 +49,15 @@ public final class ActiSkyBlockCore extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new ChatSystem(), this);
         getServer().getPluginManager().registerEvents(new JoinMessage(), this);
 
+        //staff commands
         getCommand("gmc").setExecutor(new GameModeCreative());
         getCommand("gms").setExecutor(new GameModeSurvival());
         getCommand("gmsp").setExecutor(new GameModeSpectator());
         getCommand("fly").setExecutor(new FlyCommand());
+        getCommand("day").setExecutor(new DayCommand());
+        getCommand("night").setExecutor(new NightCommand());
 
+        //ultimate commands
         getCommand("hat").setExecutor(new HatCommand());
         getCommand("nv").setExecutor(new NightVisionCommand());
 

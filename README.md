@@ -44,10 +44,10 @@ Base permission acs_staff_"function"
 * acs_staff_weather > Change world weather
 
 ## Commands > Staff
-* /gmc /gmsp /gmc
-* /time
+* /gms /gmsp /gmc
+* /day
+* /night
 * /fly
-* /weather
 
 ## Permissions default
 * None > no permission required
