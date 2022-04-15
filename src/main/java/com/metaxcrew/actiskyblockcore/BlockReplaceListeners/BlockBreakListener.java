@@ -334,7 +334,7 @@ public class BlockBreakListener implements Listener {
 				Arrays.asList(Material.AIR, Material.CARROTS) // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
 		);
 
-checkBlockReplace( // ALL LOGS
+/*checkBlockReplace( // ALL LOGS
 				e, // block break event passed through
 				Material.AIR, // tool/item required to break block with, can be list of materials or air if you want them to be able to use anything
 				true, // requirement for event to happen, in this case: block = iron ore
@@ -345,7 +345,7 @@ checkBlockReplace( // ALL LOGS
 				e.getBlock().getType(), // block to replace with when time is up. If this isn't a block then it'll be replaced with air
 				e.getBlock().getBlockData(), // extra block data for the final replacement block
 				null // block/list of blocks the block has to be when it's time to replace. If this is null or empty list then it has to be the temporary replacement block
-		);
+		);*/
 
 	}
 }
