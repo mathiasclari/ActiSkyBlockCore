@@ -25,7 +25,7 @@ public class HatCommand implements CommandExecutor {
                         p.getInventory().setHelmet(new ItemStack(p.getInventory().getItemInMainHand()));
                         p.getInventory().removeItem(new ItemStack(p.getInventory().getItemInMainHand()));
                         p.playEffect(p.getLocation(), Effect.CLICK1, 5);
-                        p.playEffect(p.getLocation(), Effect.BOW_FIRE, 6);
+                        p.playEffect(p.getLocation(), Effect.BOW_FIRE, 5);
                         sender.sendMessage(ChatColor.of("#94A8E2") + "Hat has been set!");
                         return true;
                     }
