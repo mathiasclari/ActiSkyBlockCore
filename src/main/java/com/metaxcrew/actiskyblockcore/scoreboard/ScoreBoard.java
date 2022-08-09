@@ -22,54 +22,48 @@ import java.util.UUID;
 
 public class ScoreBoard implements Listener {
 
+    private final Map<UUID, BeeScoreboard> boards = new HashMap<>();
 
-    private final Map<UUID, FastBoard> boards = new HashMap<>();
+    @Override
+    public void onEnable() {
+        getServer().getPluginManager().registerEvents(this, this);
 
-    public ScoreBoard() {
-        Bukkit.getServer().getScheduler().runTaskTimer(ActiSkyBlockCore.getInstance(), () -> {
-            for (FastBoard board : this.boards.values()) {
+        getServer().getScheduler().runTaskTimer(this, () -> {
+            for (BeeScoreboard board : this.boards.values()) {
                 updateBoard(board);
             }
         }, 0, 20);
     }
 
-    @EventHandler(priority = EventPriority.HIGHEST)
-
+    @EventHandler
     public void onJoin(PlayerJoinEvent e) {
         Player player = e.getPlayer();
 
-        FastBoard lobbysb = new FastBoard(player);
+        FastBoard board = new BeeScoreboard(player);
 
-        lobbysb.updateTitle(ChatColor.of("#2255DF") + "" + ChatColor.BOLD + "SkyBlock");
+        board.updateTitle(ChatColor.RED + "BeeScoreBoard");
 
-        this.boards.put(player.getUniqueId(), lobbysb);
-
-
+        this.boards.put(player.getUniqueId(), board);
     }
 
     @EventHandler
     public void onQuit(PlayerQuitEvent e) {
         Player player = e.getPlayer();
 
-        FastBoard lobbysb = this.boards.remove(player.getUniqueId());
+        FastBoard board = this.boards.remove(player.getUniqueId());
 
-        if (lobbysb != null) {
-            lobbysb.delete();
+        if (board != null) {
+            board.delete();
         }
-
     }
 
-
-    private void updateBoard(FastBoard lobbysb) {
-
-        lobbysb.updateLines(
+    private void updateBoard(BeeScoreboard board) {
+        board.updateLines(
                 "",
-                ChatColor.of("#577BDF")+""+ChatColor.BOLD + "Stats:",
-                ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Fly: " + ChatColor.of("#C4CDD6") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%player_allow_flight%"),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Kills: " + ChatColor.of("#C4CDD6") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Deaths: " + ChatColor.of("#C4CDD6") + lobbysb.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
-                ChatColor.of("#738291") + "» " + ChatColor.of("#94A8E2") + "Coins: " + ChatColor.of("#C4CDD6") + PlaceholderAPI.setPlaceholders(lobbysb.getPlayer(),"%vault_eco_balance_fixed%"),
+                "Players: " + getServer().getOnlinePlayers().size(),
                 "",
-                ChatColor.of("#2255DF") + "" + ChatColor.BOLD + "www.acticraft.net");
+                "Kills: " + board.getPlayer().getStatistic(Statistic.PLAYER_KILLS),
+                ""
+        );
     }
 }
